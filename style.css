@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    
+    background-color: #1f1c1c;
+    
+}
+.neon-sign {
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    animation: neonGlow 3s infinite; /* Ajusta la duración y otras propiedades según tus preferencias */
+}
+
+.neon-sign h1 {
+    font-size: 4em;
+    margin: 0;
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px rgb(101, 9, 223),
+                0 0 20px rgb(124, 16, 187),
+                0 0 30px rgb(89, 2, 146),
+                0 0 40px rgb(63, 47, 47),
+                0 0 50px rgb(15, 15, 15);
+}
+
+.neon-sign p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgb(11, 89, 233),
+                0 0 20px rgb(136, 13, 13),
+                0 0 30px rgb(20, 103, 228),
+                0 0 40px rgb(182, 14, 14),
+                0 0 50px rgb(221, 28, 28);
+}
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.post-img-1{
+    background: url(imagenes/2a2e7f0f60b750dfb36c15c268d0118d.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-2{
+    background: url(imagenes/trinitaria.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-3{
+    background: url(imagenes/descarga.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-4{
+    background: url(imagenes/videosj.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 6px 1px rgb(0,0,0,.15);
+}
+
+.post-header{
+    width: 100%;
+    height: 200px;
+    overflow:hidden;
+    cursor: pointer;
+}
+
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3,
+.post:hover .post-img-4{
+    transform: scale(1.1);
+}
+
+.post-body{
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.post-body-span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post-body-h2{
+    margin-bottom: 15px;
+}
+
+.post-body p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #9f05db;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgb(0,0,0,.1);
+    transition: .2s;
+}
+
+.post-body .post-link:hover{
+    background: #3378c7;
+    box-shadow: 1px 2px 6px 1px rgb(0,0,0,.2);
+    transform: translateY(-2px);
+}
+
+@media(max-width:840px){
+    .content{
+        -ms-grid-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px){
+    .content{
+        -ms-grid-columns: repeat(1, 1fr);
+    }
+}
+
+footer{
+    
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+
+}
+
